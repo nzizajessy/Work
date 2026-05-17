@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <title>Student Form</title>
+  <style>
+
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkblue;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white ;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      border-color: black;
+      border-style: dashed;
+    }
+
+    th {
+      background: blue;
+      color: white;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form>
+      <h2 style=" text-align: center;">Student Form</h2>
+
+      <label>First Name</label>
+      <input type="text" placeholder="Enter first name" required>
+
+      <label>Last Name</label>
+      <input type="text" placeholder="Enter last name" required>
+
+      <label>Age</label>
+      <input type="number" placeholder="Enter age" required>
+
+      <label>Gender</label>
+      <select required>
+        <option>Choose One</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <label>Academic Year</label>
+     <select>
+        <option>Choose</option>
+        <option>L3 SOD A</option>
+        <option>L3 SOD B</option>
+        <option>L3 SOD C</option>
+        <option>L3 SOD D</option>
+     </select>
+
+      <label>Marks</label>
+      <input type="number" placeholder="Enter marks" required>
+
+      <label>Comment</label>
+      <textarea rows="4" placeholder="Write your comment"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Comment</th>
+      </tr>
+
+      <tr>
+        <td>Nziza</td>
+        <td>Jessy</td>
+        <td>17</td>
+        <td>Best</td>
+      </tr>
+
+      <tr>
+        <td>Kessy</td>
+        <td>Keza</td>
+        <td>15</td>
+        <td>Nice</td>
+      </tr>
+
+      <tr>
+        <td>Soso</td>
+        <td>isaro</td>
+        <td>16</td>
+        <td>Good</td>
+      </tr>
+    </table>
+
+  </div>
+
+</body>
+</html>
